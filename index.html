@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chilanka&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40="
+      crossorigin="anonymous"
+    />
+    <title>frontend test task</title>
+  </head>
+  <body>
+    <div class="wrapper wrapper--w1070">
+      <div class="search-box">
+        <form>
+          <div class="search-box_input-group input--medium">
+            <label class="label">День</label>
+            <div class="search-box_input-group__icon js-number-input">
+              <div class="icon-con">
+                <span class="plus">+</span>
+                <span class="minus">-</span>
+              </div>
+              <input
+                class="input--style-1 quantity"
+                onkeypress="inputValidation(event)"
+                type="text"
+                name="day"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="search-box_input-group input--medium">
+            <label class="label">Месяц</label>
+            <div class="search-box_input-group__icon js-number-input">
+              <div class="icon-con">
+                <span class="plus">+</span>
+                <span class="minus">-</span>
+              </div>
+              <input
+                class="input--style-1 quantity"
+                onkeypress="inputValidation(event)"
+                type="text"
+                name="month"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="search-box_input-group input--medium">
+            <label class="label">Год</label>
+            <div class="search-box_input-group__icon js-number-input">
+              <div class="icon-con">
+                <span class="plus">+</span>
+                <span class="minus">-</span>
+              </div>
+              <input
+                class="input--style-1 quantity"
+                onkeypress="inputValidation(event)"
+                type="text"
+                name="year"
+                value="1"
+              />
+            </div>
+          </div>
+          <button
+            class="btn-submit"
+            type="button"
+            onclick="onSumbitHandler(event)"
+          >
+            Поиск
+          </button>
+        </form>
+        <div class="lds-dual-ring"></div>
+      </div>
+
+      <div class="users-list_wrapper">
+        <h2 class="total-count"></h2>
+        <ul class="users-list"></ul>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/buttons-funcs.js"></script>
+    <script src="./js/input-validation.js"></script>
+  </body>
+</html>
